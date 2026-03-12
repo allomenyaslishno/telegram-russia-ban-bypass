@@ -56,3 +56,32 @@ A: Проект поддерживается энтузиастами. Пока 
 ---
 **Tags:**
 `telegram-ban` `russia-censorship` `sheikin` `bypass-blocking` `telegram-proxy` `mtproto-fix` `vless` `reality` `sovfed` `vpn-russia`
+
+---
+
+## 🤖 Telegram AI Bot (ChatGPT + Image + Sora 2)
+
+Добавлен пример Telegram-бота с командами:
+- `/chat <текст>` — ответ текстовой модели OpenAI
+- `/image <описание>` — генерация изображения
+- `/sora <описание>` — отправка запроса в модель `sora-2` (если доступна вашему аккаунту)
+
+### Быстрый запуск
+
+1. Установите зависимости:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Создайте `.env` из примера:
+   ```bash
+   cp .env.example .env
+   ```
+3. Заполните ключи:
+   - `TELEGRAM_BOT_TOKEN`
+   - `OPENAI_API_KEY`
+4. Запустите:
+   ```bash
+   python bot.py
+   ```
+
+> Важно: реальные API-ключи не хранятся в репозитории. Используйте только переменные окружения.
